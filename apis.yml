@@ -1,23 +1,76 @@
 aid: bachan-s
+
 name: Bachan's
-description: 'Bachan''s is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: http://bachans.com/cdn/shop/files/Untitled-1_56a64f86-c01e-4ae9-80ed-e68721d97e60.png?v=1767645105
+
+description: "Bachan's is a specialty food company based in Japan, offering authentic Japanese barbecue sauces and related products. The brand emphasizes traditional family recipes, high-quality ingredients, and a unique octopus-themed branding. Their online store provides a range of sauce flavors, merchandise, and recipe guides, catering to both home cooks and culinary enthusiasts worldwide."
+
 url: https://raw.githubusercontent.com/api-evangelist/bachan-s/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Food
+- Sauce
+- Japanese
+- E-commerce
+- Specialty
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/bachan-s-llms.txt
+- type: WellKnown
+  url: well-known/bachan-s-well-known.yml
+- type: Hosts
+  url: hosts/bachan-s-hosts.yml
+- type: Vendors
+  url: vendors/bachan-s-vendors.yml
+- type: TermsOfService
+  url: https://bachans.com/pages/terms-conditions
+- type: PrivacyPolicy
+  url: https://bachans.com/pages/privacy-policy
+- type: Newsroom
+  url: https://bachans.com/blogs/news
+- type: Login
+  url: https://bachans.com/account/login
+- type: DomainSecurity
+  url: security/bachan-s-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://bachans.com/
+- type: Blog
+  url: https://bachans.com/blogs/recipes
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The provider's website is a Shopify storefront with no machine‑readable API specification.
+  evidence:
+    - url: https://bachans.com/openapi.json
+      status: 404
+  checked: 2026-09-27
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
