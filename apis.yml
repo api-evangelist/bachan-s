@@ -67,7 +67,7 @@ x-coverage:
   evidence:
     - url: https://bachans.com/openapi.json
       status: 404
-  checked: 2026-09-27
+  checked: '2026-09-27'
 x-enrichment:
   date: '2026-09-27'
   status: enriched
