@@ -1,0 +1,8 @@
+---
+title: "Crispy Chicken Burger"
+url: "https://bachans.com/blogs/recipes/chicken-burger"
+date: "2026-07-10"
+author: "Ecomm Admin"
+feed_url: "https://bachans.com/blogs/recipes.atom"
+---
+
